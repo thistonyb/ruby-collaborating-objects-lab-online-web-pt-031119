@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 require 'pry'
 class Song
   attr_accessor :name, :artist
@@ -18,4 +19,14 @@ class Song
     self.artist = Artist.find_or_create_by_name(name)
     self.artist.add_song(self)
   end
+=======
+class Song
+  attr_accessor :song_name
+
+  def initialize(song_name)
+    @song_name = song_name
+  end
+
+
+>>>>>>> 797e64393e3c5d01b6dcf00a5e833a39decc30d8
 end

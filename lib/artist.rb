@@ -26,6 +26,7 @@ class Artist
         return artist
       end
     end
+<<<<<<< HEAD
     artist = self.new(name)
     @@all << artist
     artist
@@ -33,5 +34,12 @@ class Artist
 
   def print_songs
     self.songs.each {|song| puts "#{song.name}"}
+=======
+    Artist.new(name)
+  end
+
+  def print_songs
+    self.songs.each {|song| puts "#{song.song_name}"}
+>>>>>>> 797e64393e3c5d01b6dcf00a5e833a39decc30d8
   end
 end
